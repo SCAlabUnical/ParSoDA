@@ -1,0 +1,696 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Real shapes</name>
+		<Placemark>
+			<name>Castel Sant'Angelo</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.465688699999998,41.902474999999995,0.0 12.4664129,41.9012334,0.0 12.4665523,41.9012374,0.0 12.46696,41.902541,0.0 12.4670121,41.902633,0.0 12.4670673,41.9035091,0.0 12.4669763,41.9036404,0.0 12.466804699999999,41.903648,0.0 12.466289600000001,41.9036449,0.0 12.465603,41.9036189,0.0 12.465560099999998,41.90354099999999,0.0 12.465688699999998,41.902474999999995,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Musei Vaticani</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.455288,41.906637,0.0 12.454548,41.906892,0.0 12.4518331,41.9063655,0.0 12.4515707,41.90599430000001,0.0 12.454205,41.90297199999999,0.0 12.455181,41.903076000000006,0.0 12.455288,41.906637,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Piazza Navona</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.472669000000003,41.89993100000001,0.0 12.472846000000004,41.897811,0.0 12.473495000000003,41.897885,0.0 12.473264,41.900063,0.0 12.473080999999999,41.90012399999999,0.0 12.472789999999998,41.900065,0.0 12.472669000000003,41.89993100000001,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Colosseo</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4908379,41.891314,0.0 12.4902487,41.8900179,0.0 12.4902043,41.8897939,0.0 12.4903209,41.8895659,0.0 12.490494000000002,41.889354000000004,0.0 12.490967,41.8891938,0.0 12.4916855,41.889219600000004,0.0 12.4921654,41.8892133,0.0 12.4925047,41.8891902,0.0 12.4926834,41.8891992,0.0 12.4933297,41.889229799999995,0.0 12.493664799999998,41.8893402,0.0 12.493782799999998,41.889477299999996,0.0 12.494040800000002,41.88977020000001,0.0 12.494275500000002,41.8903899,0.0 12.4942204,41.8907301,0.0 12.493732,41.890963,0.0 12.493019999999998,41.89122499999999,0.0 12.492192800000002,41.89145,0.0 12.4916162,41.8916077,0.0 12.490970899999999,41.89172859999999,0.0 12.4909076,41.89152,0.0 12.4908379,41.891314,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Arco Costantino</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.490506000000002,41.889903000000004,0.0 12.490440000000001,41.889763,0.0 12.490844000000001,41.88968100000001,0.0 12.490894000000003,41.889819,0.0 12.490506000000002,41.889903000000004,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Villa Borghese</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.476820899999998,41.9117786,0.0 12.478441500000002,41.910133800000004,0.0 12.485543899999998,41.90995079999999,0.0 12.488129400000002,41.9102782,0.0 12.4917988,41.9111246,0.0 12.493407800000002,41.9133756,0.0 12.493879799999998,41.9154196,0.0 12.4906614,41.9172637,0.0 12.4886221,41.9184212,0.0 12.484159300000002,41.9172078,0.0 12.4767779,41.912561600000004,0.0 12.476820899999998,41.9117786,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Piazza del Popolo</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.475340100000002,41.91101199999999,0.0 12.4752063,41.9106649,0.0 12.475383699999998,41.910282,0.0 12.4757885,41.9100802,0.0 12.476214699999998,41.9099861,0.0 12.476638799999998,41.9100222,0.0 12.477035999999998,41.910162,0.0 12.477325000000002,41.910597,0.0 12.47739,41.910979999999995,0.0 12.4772961,41.9111378,0.0 12.477137700000004,41.9112477,0.0 12.476890799999998,41.9114237,0.0 12.4765501,41.91150340000001,0.0 12.4760376,41.9115272,0.0 12.4757157,41.9113973,0.0 12.475340100000002,41.91101199999999,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Fontana di Trevi</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.483127,41.900677,0.0 12.483207400000001,41.9006541,0.0 12.483363000000002,41.90067100000001,0.0 12.4835152,41.900691,0.0 12.4836711,41.900752,0.0 12.4836907,41.9008379,0.0 12.483687,41.90090390000001,0.0 12.483689100000001,41.9009939,0.0 12.4836729,41.9010724,0.0 12.483587000000002,41.901135,0.0 12.483384899999999,41.90117959999999,0.0 12.483172200000002,41.9011563,0.0 12.4829541,41.9010951,0.0 12.482897,41.900969999999994,0.0 12.4829529,41.9007856,0.0 12.483127,41.900677,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Isola Tiberina</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4751443,41.890913,0.0 12.477189,41.890334,0.0 12.479096000000002,41.889595,0.0 12.479231000000002,41.88963400000001,0.0 12.479324,41.889705,0.0 12.479316,41.889807,0.0 12.478986,41.890268,0.0 12.478495,41.89069700000001,0.0 12.47768,41.891099999999994,0.0 12.477272000000001,41.89125,0.0 12.476757,41.891352,0.0 12.475936,41.891288,0.0 12.475125599999998,41.891137,0.0 12.474705,41.891116000000004,0.0 12.4746948,41.891077,0.0 12.4746799,41.8909871,0.0 12.4751443,41.890913,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Piazza di Spagna</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.481231000000001,41.906501,0.0 12.4829767,41.9046488,0.0 12.4833697,41.9047226,0.0 12.48343,41.906006000000005,0.0 12.4831349,41.9066072,0.0 12.481982,41.906649,0.0 12.481231000000001,41.906501,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Pantheon</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.476421999999998,41.899027,0.0 12.476431999999999,41.89824,0.0 12.477279999999999,41.898251,0.0 12.477226,41.899059,0.0 12.4771093,41.89935,0.0 12.476895999999998,41.899613099999996,0.0 12.476483100000001,41.899606000000006,0.0 12.476421999999998,41.899027,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Piazza Venezia</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4821801,41.8949118,0.0 12.4835805,41.8952776,0.0 12.483184600000001,41.8960833,0.0 12.482616999999998,41.89683300000001,0.0 12.481750999999997,41.896633,0.0 12.481879700000002,41.8958563,0.0 12.4821801,41.8949118,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Circo Massimo</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.48225,41.887199,0.0 12.487872,41.883541,0.0 12.489201999999999,41.884867,0.0 12.48328,41.888157,0.0 12.48225,41.887199,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bocca della Verita</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.481453,41.887893,0.0 12.481821000000002,41.888261,0.0 12.481592,41.888623,0.0 12.481305000000003,41.888934,0.0 12.481138999999999,41.88898799999999,0.0 12.480973000000002,41.888912,0.0 12.480862999999998,41.888816,0.0 12.480687,41.88852899999999,0.0 12.481004000000002,41.88818200000001,0.0 12.481453,41.887893,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>St Maria in Trastevere</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.469338,41.889352,0.0 12.470494000000002,41.88934400000001,0.0 12.470464,41.88970900000001,0.0 12.46995,41.889707,0.0 12.469747999999997,41.889661,0.0 12.469336,41.88956700000001,0.0 12.469338,41.889352,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Campidoglio</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4822309,41.89382030000001,0.0 12.481935,41.893792,0.0 12.481929599999999,41.893576,0.0 12.4819923,41.893108600000005,0.0 12.482131200000001,41.8927889,0.0 12.482415200000002,41.8925811,0.0 12.482704600000002,41.8925291,0.0 12.4830338,41.892495,0.0 12.483578,41.892569,0.0 12.483838,41.89291190000001,0.0 12.4838942,41.8931989,0.0 12.4837762,41.8933702,0.0 12.483512999999999,41.8936297,0.0 12.48328,41.8937718,0.0 12.4830392,41.8938398,0.0 12.482610600000001,41.893852,0.0 12.4822309,41.89382030000001,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Foro Romano</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.483306,41.892078,0.0 12.483465,41.891942,0.0 12.483694000000002,41.892115,0.0 12.48499,41.891411,0.0 12.484950000000001,41.891221,0.0 12.484882000000002,41.891158,0.0 12.485609999999998,41.890818,0.0 12.487279800000001,41.8899941,0.0 12.489602300000001,41.8899569,0.0 12.4903424,41.8902559,0.0 12.490762100000003,41.89109690000001,0.0 12.488463199999998,41.892349,0.0 12.4874242,41.8929372,0.0 12.4864892,41.8934347,0.0 12.485435899999999,41.894082,0.0 12.484545,41.89444,0.0 12.483612999999998,41.892606,0.0 12.48367,41.892408,0.0 12.483306,41.892078,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>San Pietro</name>
+			<description><![CDATA[descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: 
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.452432,41.902134,0.0 12.452720999999999,41.901674,0.0 12.453345000000002,41.901474,0.0 12.4569086,41.9013271,0.0 12.457586400000002,41.9012941,0.0 12.457953,41.9014681,0.0 12.458282000000002,41.901726,0.0 12.4585126,41.9018661,0.0 12.458534100000001,41.9020931,0.0 12.458507300000003,41.9023401,0.0 12.4584584,41.9026029,0.0 12.458184200000002,41.9028818,0.0 12.457887899999998,41.90303629999999,0.0 12.457296600000003,41.90317890000001,0.0 12.45338,41.90284,0.0 12.452683000000002,41.902643,0.0 12.452432,41.902134,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Montecitorio</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.478012000000001,41.900682,0.0 12.4786076,41.9003007,0.0 12.479251500000002,41.900678000000006,0.0 12.479409800000003,41.900981300000005,0.0 12.4793843,41.90109,0.0 12.479364200000001,41.901166800000006,0.0 12.478653099999999,41.9012129,0.0 12.478070800000001,41.9012089,0.0 12.4780038,41.9011181,0.0 12.477990399999998,41.9009554,0.0 12.478012000000001,41.900682,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Piazza Colonna</name>
+			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: descrizione: 
+density: 
+punti:
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.479551900000002,41.900673700000006,0.0 12.479619699999999,41.90051710000001,0.0 12.480230199999998,41.9006821,0.0 12.4805215,41.9007581,0.0 12.4804074,41.9010605,0.0 12.480310800000002,41.9012849,0.0 12.4798227,41.9011849,0.0 12.4793843,41.90109,0.0 12.479551900000002,41.900673700000006,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Campo de Fiori</name>
+			<description><![CDATA[descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: 
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4714487,41.895754,0.0 12.472466500000001,41.895152,0.0 12.472765,41.895432,0.0 12.472457,41.895667,0.0 12.472106,41.895869999999995,0.0 12.471820400000002,41.896046,0.0 12.4714487,41.895754,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Trastevere</name>
+			<description><![CDATA[descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value>descrizione: 
+density: 
+punti:</value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4748366,41.8837872,0.0 12.4788378,41.886879,0.0 12.4792238,41.88777399999999,0.0 12.4787948,41.888924,0.0 12.4771218,41.88978699999999,0.0 12.474674800000003,41.89049,0.0 12.4732268,41.89096070000001,0.0 12.471886,41.8915196,0.0 12.469353700000001,41.892789900000004,0.0 12.467164900000002,41.8926619,0.0 12.465864600000002,41.8899075,0.0 12.467465300000002,41.8889753,0.0 12.471319100000002,41.8857108,0.0 12.4738765,41.88422980000001,0.0 12.4748366,41.8837872,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Gianicolo</name>
+			<description><![CDATA[descrizione: <br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value></value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.4612856,41.88833319999999,0.0 12.4646544,41.8891798,0.0 12.460620400000002,41.8959683,0.0 12.459075500000003,41.8934926,0.0 12.46135,41.88846800000001,0.0 12.4612856,41.88833319999999,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>St Maria Maggiore</name>
+			<description><![CDATA[descrizione: <br>density: <br>punti: ]]></description>
+			<styleUrl>#poly-009D57-1-76</styleUrl>
+			<ExtendedData>
+				<Data name='descrizione'>
+					<value></value>
+				</Data>
+				<Data name='density'>
+					<value></value>
+				</Data>
+				<Data name='punti'>
+					<value></value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>12.498536100000003,41.896790900000006,0.0 12.4993944,41.896755,0.0 12.499796699999997,41.897138299999995,0.0 12.499432000000002,41.8978011,0.0 12.4983752,41.8982643,0.0 12.49749,41.89860370000001,0.0 12.4969375,41.8980686,0.0 12.498536100000003,41.896790900000006,0.0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Style id='poly-009D57-1-76-normal'>
+			<LineStyle>
+				<color>ff579D00</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C579D00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Style id='poly-009D57-1-76-highlight'>
+			<LineStyle>
+				<color>ff579D00</color>
+				<width>2.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4C579D00</color>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<StyleMap id='poly-009D57-1-76'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#poly-009D57-1-76-normal</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#poly-009D57-1-76-highlight</styleUrl>
+			</Pair>
+		</StyleMap>
+	</Document>
+</kml>
