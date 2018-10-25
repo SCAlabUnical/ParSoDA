@@ -20,7 +20,7 @@ public class ReduceByItemsets extends AbstractReduceFunction {
 	}
 
 	public List<String> reduce(TextTuple key, Iterable<Text> items) {
-		Set<String> set =  DataUtils.splitDataByTimeSet(items, Metadata.LOCATION_NAME, "day", options.getInteger("t"));
+		Set<String> set =  DataUtils.splitDataByTimeSet(items, Metadata.LOCATION_NAME, "hour", options.getInteger("t"));
 		List<String> ret = new ArrayList<String>();
 		ret.addAll(set);
 		return ret;
