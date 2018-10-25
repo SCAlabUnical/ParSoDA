@@ -1,40 +1,37 @@
-package it.unical.taganalysis.app;
+package it.unical.scalab.parsoda.app;
 
 import it.unical.scalab.parsoda.acquisition.FileReaderCrawler;
-import it.unical.scalab.parsoda.analysis.TwoFactionsPolarization;
 import it.unical.scalab.parsoda.common.MultiKeysMapperWriter;
 import it.unical.scalab.parsoda.common.SocialDataApp;
 import it.unical.scalab.parsoda.filtering.HasEmoji;
+import it.unical.scalab.parsoda.filtering.HasTags;
 import it.unical.scalab.parsoda.mapping.ClassifyByEmoji;
-import it.unical.scalab.parsoda.reduction.ReduceByTwoFactionsPolarization;
+import it.unical.scalab.parsoda.reduction.ReduceByAveragePolarization;
 
-public class EmojiPolarizationMain {
+public class HashtagPolarizationMain {
 
 	public static void main(String[] args) {
-		SocialDataApp app = new SocialDataApp("Emoji Polarization");
+		SocialDataApp app = new SocialDataApp("Hashtags Polarization");
 		app.setOutputBasePath("outputApp");
 		app.setLocatFileSystem();
 		app.setMapperWriter(MultiKeysMapperWriter.class, null);
 		String[] cFiles = { "resources/emoji.json" };
 		app.setDistributedCacheFiles(cFiles);
 		Class[] cFunctions = { FileReaderCrawler.class };
-		String[] cParams = { "-i tweetsFinal.json" };
+		String[] cParams = { "-i resources/tweetsFinal.json" };
 		app.setCrawlers(cFunctions, cParams);
-		Class[] fFunctions = { HasEmoji.class };
+		Class[] fFunctions = { HasTags.class,  HasEmoji.class};
 		String[] fParams = null;
 		app.setFilters(fFunctions, fParams);
 		Class[] mFunctions = { ClassifyByEmoji.class };
 		String[] mParams = {"-f emoji.json"};	
 		app.setMapFunctions(mFunctions, mParams);
-		String groupKey = "userId";
+		String groupKey = "hashtags";
 		String sortKey = "DATETIME";
 		app.setPartitioningKeys(groupKey, sortKey);
-		Class rFunction = ReduceByTwoFactionsPolarization.class;
-		String rParams = "-t 5";
+		Class rFunction = ReduceByAveragePolarization.class;
+		String rParams = "-t 0";
 		app.setReduceFunction(rFunction, rParams);
-		Class aFunction = TwoFactionsPolarization.class;
-		String aParams = null;
-		app.setAnalysisFunction(aFunction, aParams);	
 		app.execute();
 	}
 

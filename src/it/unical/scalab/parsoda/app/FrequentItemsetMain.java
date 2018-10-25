@@ -1,4 +1,4 @@
-package it.unical.taganalysis.app;
+package it.unical.scalab.parsoda.app;
 
 import it.unical.scalab.parsoda.acquisition.FileReaderCrawler;
 import it.unical.scalab.parsoda.analysis.FPGrowth;
