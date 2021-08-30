@@ -1,16 +1,12 @@
 package it.unical.scalab.parsoda.analysis;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.math3.ml.clustering.Cluster;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.LocatedFileStatus;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.RemoteIterator;
@@ -71,7 +67,6 @@ public class ExtractRoIs extends AbstractAnalysisFunction {
 				}
 				br.close();
 			}
-			fs.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -82,6 +77,7 @@ public class ExtractRoIs extends AbstractAnalysisFunction {
 	public void analyzeData() {
 		OutputStream os;
 		try {
+
 			os = fs.create(new Path(this.getOutputPath() + "/RoIs.txt"));
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 			

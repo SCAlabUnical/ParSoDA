@@ -88,7 +88,7 @@ public class SocialDataApp implements Tool {
 				function.setBasePath(this.outputBasePath);
 				function.setInputPath(this.outputBasePath);
 				function.setOutputPath(this.outputBasePath + "-acquisition");
-				function.setFileSystem(FileSystem.get(this.conf));
+				function.setFileSystem(FileSystem.newInstance(this.getConf()));
 				this.crawlers.add(function);
 
 			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
@@ -285,7 +285,7 @@ public class SocialDataApp implements Tool {
 			this.analysisFunction.setBasePath(this.outputBasePath);
 			this.analysisFunction.setInputPath(this.outputBasePath);
 			this.analysisFunction.setOutputPath(this.outputBasePath + "-analysis");
-			this.analysisFunction.setFileSystem(FileSystem.get(this.conf));
+			this.analysisFunction.setFileSystem(FileSystem.newInstance(this.getConf()));
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -307,7 +307,7 @@ public class SocialDataApp implements Tool {
 			this.visualizationFunction.setBasePath(this.outputBasePath);
 			this.visualizationFunction.setInputPath(this.analysisFunction.getResultPath());
 			this.visualizationFunction.setOutputPath(this.outputBasePath + "-visualization");
-			this.visualizationFunction.setFileSystem(FileSystem.get(this.conf));
+			this.visualizationFunction.setFileSystem(FileSystem.newInstance(this.getConf()));
 
 		} catch (Exception e) {
 			e.printStackTrace();
