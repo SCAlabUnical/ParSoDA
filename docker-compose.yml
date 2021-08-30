@@ -1,4 +1,4 @@
-version: "3"
+version: "3.5"
 
 services:
   namenode:
@@ -10,6 +10,8 @@ services:
       - CLUSTER_NAME=test
     env_file:
       - ./hadoop.env
+    networks:
+      -  default
 
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8
@@ -20,7 +22,9 @@ services:
       SERVICE_PRECONDITION: "namenode:50070"
     env_file:
       - ./hadoop.env
-  
+    networks:
+      -  default
+
   resourcemanager:
     image: bde2020/hadoop-resourcemanager:2.0.0-hadoop2.7.4-java8
     container_name: resourcemanager
@@ -28,6 +32,8 @@ services:
       SERVICE_PRECONDITION: "namenode:50070 datanode:50075"
     env_file:
       - ./hadoop.env
+    networks:
+      -  default
 
   nodemanager1:
     image: bde2020/hadoop-nodemanager:2.0.0-hadoop2.7.4-java8
@@ -36,7 +42,9 @@ services:
       SERVICE_PRECONDITION: "namenode:50070 datanode:50075 resourcemanager:8088"
     env_file:
       - ./hadoop.env
-  
+    networks:
+      -  default
+
   historyserver:
     image: bde2020/hadoop-historyserver:2.0.0-hadoop2.7.4-java8
     container_name: historyserver
@@ -46,7 +54,13 @@ services:
       - hadoop_historyserver:/hadoop/yarn/timeline
     env_file:
       - ./hadoop.env
-  
+    networks:
+        -  default
+
+networks:
+  default:
+    name: shared-hadoop
+
 volumes:
   hadoop_namenode:
   hadoop_datanode:
