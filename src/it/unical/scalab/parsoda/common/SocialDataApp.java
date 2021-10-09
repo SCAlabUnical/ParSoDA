@@ -315,7 +315,7 @@ public class SocialDataApp implements Tool {
 
 	}
 
-	public void execute() {
+	public int execute() {
 
 		// Definizione output
 		try {
@@ -347,7 +347,7 @@ public class SocialDataApp implements Tool {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		return exitCode;
 	}
 
 }
