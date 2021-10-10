@@ -1,13 +1,19 @@
 package it.unical.scalab.parsoda.app;
 
 import it.unical.scalab.parsoda.acquisition.FileReaderCrawler;
+import it.unical.scalab.parsoda.analysis.ExtractRoIs;
 import it.unical.scalab.parsoda.analysis.PrefixSpan;
 import it.unical.scalab.parsoda.common.SocialDataApp;
+import it.unical.scalab.parsoda.filtering.ContainsKeywords;
 import it.unical.scalab.parsoda.filtering.IsGeotagged;
 import it.unical.scalab.parsoda.filtering.IsInPlace;
 import it.unical.scalab.parsoda.mapping.FindPoI;
+import it.unical.scalab.parsoda.reduction.ReduceByCoordinates;
 import it.unical.scalab.parsoda.reduction.ReduceByTrajectories;
+import it.unical.scalab.parsoda.visualization.RoIsToKML;
 import it.unical.scalab.parsoda.visualization.SortPrefixSpanBy;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +30,7 @@ public class RoIMiningMainClusterSocket {
     public static void main(String[] args) {
         try {
 
-            SocialDataApp app = new SocialDataApp("Sequential Pattern Mining - City of Rome");
+            SocialDataApp app = new SocialDataApp("RoI Mining - Colosseum - with SockerServer");
             ServerSocket serverSocket = new ServerSocket(1098);
             System.out.println("Server Socket is waiting for client connection...");
 
@@ -40,10 +46,19 @@ public class RoIMiningMainClusterSocket {
             int status = runApp(app, inputPath);
             out.println("Execution completed with status code: " + status);
 
-            Files.lines(Paths.get(app.getOutputBasePath() + "-visualization/visualization-result.txt"))
-                    .forEach(l -> {
-                        out.println(l);
-                    });
+            Path pt = new Path(app.getOutputBasePath() + "-visualization/RoIs.kml");
+            FileSystem fs = FileSystem.get(app.getConf());
+            BufferedReader br = new BufferedReader(new InputStreamReader(fs.open(pt)));
+            try {
+                String line;
+                line = br.readLine();
+                while (line != null) {
+                    out.println(line);
+                    line = br.readLine();
+                }
+            } finally {
+                br.close();
+            }
 
             in.close();
             out.close();
@@ -55,29 +70,27 @@ public class RoIMiningMainClusterSocket {
     }
 
     private static int runApp(SocialDataApp app, String input) {
-        String[] cFiles = {"resources/RomeRoIs.kml"};
-        app.setDistributedCacheFiles(cFiles);
-        app.setLocatFileSystem();
+        String colosseumSynonyms = "colosse:colis:collis:collos:Amphiteatrum Flavium:Amphitheatrum Flavium:An Colasaem:Coliseo:Coliseo:Coliseo de Roma:Coliseo de Roma:Coliseu de Roma:Coliseum:Coliseum:Coliseum:Coliseus:Colloseum:Coloseu:Colosseo:Colosseo:Colosseo:Colosseu:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Culusseu:Kolezyum:Koliseoa:Kolize:Kolizejs:Kolizey:Kolizey:Koliziejus:Kolosej:Kolosej:Koloseo:Koloseo:Koloseum:Koloseum:Koloseum:Koloseum:Koloseum:Koloseum:Koloseum:Koloseumi:Kolosseum:Kolosseum:Kolosseum:Kolosseum";
+        app.setOutputBasePath(input + "/outputApp");
+        app.setHDFS("namenode", "9000");
+        app.setNumReducer(1);
+
         Class[] cFunctions = {FileReaderCrawler.class};
-        String[] cParams = {"-i " + input};
+        String[] cParams = {"-i " + input + "/Colosseum500m.json"};
+
         app.setCrawlers(cFunctions, cParams);
-        Class[] fFunctions = {IsGeotagged.class, IsInPlace.class};
-        String[] fParams = {" ", "-lng 12.492 -lat 41.890 -radius 10000"};
+        Class[] fFunctions = {IsGeotagged.class, ContainsKeywords.class};
+        String[] fParams = {" ", "-separator : -keywords " + colosseumSynonyms};
         app.setFilters(fFunctions, fParams);
-        Class[] mFunctions = {FindPoI.class};
-        String[] mParams = null;
-        app.setMapFunctions(mFunctions, mParams);
-        String groupKey = "USER.USERID";
-        String sortKey = "DATETIME";
-        app.setPartitioningKeys(groupKey, sortKey);
-        Class rFunction = ReduceByTrajectories.class;
+        Class rFunction = ReduceByCoordinates.class;
         String rParams = "-t 5";
+
         app.setReduceFunction(rFunction, rParams);
-        Class aFunction = PrefixSpan.class;
-        String aParams = "-maxPatternLength 5 -minSupport 0.005";
+        Class aFunction = ExtractRoIs.class;
+        String aParams = "-minPts 150 -eps 30";
         app.setAnalysisFunction(aFunction, aParams);
-        Class vFunction = SortPrefixSpanBy.class;
-        String vParams = "-k support -d DESC";
+        Class vFunction = RoIsToKML.class;
+        String vParams = null;
         app.setVisualizationFunction(vFunction, vParams);
         return app.execute();
     }
