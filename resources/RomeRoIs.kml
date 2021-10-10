@@ -87,7 +87,7 @@ punti:</value>
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>Colosseo</name>
+			<name>Colosseum</name>
 			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
 			<styleUrl>#poly-009D57-1-76</styleUrl>
 			<ExtendedData>
@@ -451,7 +451,7 @@ punti:</value>
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>Foro Romano</name>
+			<name>Roman Forum</name>
 			<description><![CDATA[descrizione: descrizione: descrizione: <br>density: <br>punti:<br>density: <br>punti:<br>density: <br>punti: ]]></description>
 			<styleUrl>#poly-009D57-1-76</styleUrl>
 			<ExtendedData>
