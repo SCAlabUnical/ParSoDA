@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1aa48be-08b9-42d2-b3d3-7c55880381f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/outputApp-analysis/.itemsetFSM.txt.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp-analysis/FSM-results/translatedFS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp-analysis/itemsetFSM.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp-visualization/.visualization-result.txt.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp-visualization/visualization-result.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp/.part-r-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputApp/part-r-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Colosseum500m.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zGFdP9qGWXGTbfIlLwqzRbGD5w" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.unical.scalab.parsoda.app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RoIMiningMainClusterSocket">
+    <configuration name="RoIMiningMainCluster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unical.scalab.parsoda.app.RoIMiningMainCluster" />
+      <module name="ParSoDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unical.scalab.parsoda.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoIMiningMainClusterSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unical.scalab.parsoda.app.RoIMiningMainClusterSocket" />
+      <module name="ParSoDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unical.scalab.parsoda.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SequentialPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unical.scalab.parsoda.app.SequentialPatternMain" />
+      <module name="ParSoDA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unical.scalab.parsoda.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RoIMiningMainClusterSocket" />
+        <item itemvalue="Application.RoIMiningMainCluster" />
+        <item itemvalue="Application.SequentialPatternMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1aa48be-08b9-42d2-b3d3-7c55880381f1" name="Changes" comment="" />
+      <created>1633766605899</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633766605899</updated>
+      <workItem from="1633766608380" duration="6209000" />
+      <workItem from="1633851494171" duration="809000" />
+    </task>
+    <task id="LOCAL-00001" summary="fixed pom.xml">
+      <created>1633851727254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633851727254</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fixed pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed pom.xml" />
+  </component>
+</project>
