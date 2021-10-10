@@ -11,7 +11,8 @@ services:
     env_file:
       - ./hadoop.env
     networks:
-      -  default
+      default:
+        ipv4_address: 172.20.0.5
 
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8
@@ -23,7 +24,8 @@ services:
     env_file:
       - ./hadoop.env
     networks:
-      -  default
+      default:
+        ipv4_address: 172.20.0.2
 
   resourcemanager:
     image: bde2020/hadoop-resourcemanager:2.0.0-hadoop2.7.4-java8
@@ -33,7 +35,8 @@ services:
     env_file:
       - ./hadoop.env
     networks:
-      -  default
+      default:
+        ipv4_address: 172.20.0.4
 
   nodemanager1:
     image: bde2020/hadoop-nodemanager:2.0.0-hadoop2.7.4-java8
@@ -43,7 +46,8 @@ services:
     env_file:
       - ./hadoop.env
     networks:
-      -  default
+      default:
+        ipv4_address: 172.20.0.3
 
   historyserver:
     image: bde2020/hadoop-historyserver:2.0.0-hadoop2.7.4-java8
@@ -55,11 +59,16 @@ services:
     env_file:
       - ./hadoop.env
     networks:
-        -  default
+      default:
+          ipv4_address: 172.20.0.6
 
 networks:
   default:
-    name: shared-hadoop
+    driver: bridge
+    name: hadoop
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
 
 volumes:
   hadoop_namenode:
