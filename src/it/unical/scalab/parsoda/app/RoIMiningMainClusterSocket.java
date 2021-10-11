@@ -31,6 +31,7 @@ public class RoIMiningMainClusterSocket {
         try {
 
             SocialDataApp app = new SocialDataApp("RoI Mining - Colosseum - with SockerServer");
+
             ServerSocket serverSocket = new ServerSocket(1098);
             System.out.println("Server Socket is waiting for client connection...");
 

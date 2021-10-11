@@ -18,7 +18,7 @@ public class RoIMiningMain {
 		app.setLocatFileSystem();
 		app.setNumReducer(1);
 		Class[] cFunctions = { FileReaderCrawler.class };
-		String[] cParams = { "-i resources/Colosseum500m.json" };
+		String[] cParams = { "-i resources/FlickrRome2017.json" };
 		app.setCrawlers(cFunctions, cParams);
 		Class[] fFunctions = { IsGeotagged.class, ContainsKeywords.class };
 		String[] fParams = { " ", "-separator : -keywords " + colosseumSynonyms };

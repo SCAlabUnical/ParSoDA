@@ -16,17 +16,20 @@ public class SequentialPatternMain {
 		app.setDistributedCacheFiles(cFiles);
 		app.setLocatFileSystem();
 		Class[] cFunctions = { FileReaderCrawler.class };
-		String[] cParams = { "-i resources/Colosseum500m.json" };
+		String[] cParams = { "-i resources/FlickrRome2017.json" };
+//		String[] cParams = { "-i resources/Colosseum500m.json" };
 		app.setCrawlers(cFunctions, cParams);
 		Class[] fFunctions = { IsGeotagged.class, IsInPlace.class };
 		String[] fParams = { " ", "-lng 12.492 -lat 41.890 -radius 10000" };
 		app.setFilters(fFunctions, fParams);
 		Class[] mFunctions = { FindPoI.class };
 		String[] mParams = null;
+
 		app.setMapFunctions(mFunctions, mParams);
 		String groupKey = "USER.USERID";
 		String sortKey = "DATETIME";
 		app.setPartitioningKeys(groupKey, sortKey);
+
 		Class rFunction = ReduceByTrajectories.class;
 		String rParams = "-t 5";
 		app.setReduceFunction(rFunction, rParams);		
