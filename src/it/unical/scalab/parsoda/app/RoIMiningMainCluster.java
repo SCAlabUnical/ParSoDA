@@ -26,8 +26,7 @@ public class RoIMiningMainCluster {
         String[] fParams = {" ", "-separator : -keywords " + colosseumSynonyms};
         app.setFilters(fFunctions, fParams);
         Class rFunction = ReduceByCoordinates.class;
-        String rParams = "-t 5";
-
+        String rParams = null;
         app.setReduceFunction(rFunction, rParams);
         Class aFunction = ExtractRoIs.class;
         String aParams = "-minPts 150 -eps 30";

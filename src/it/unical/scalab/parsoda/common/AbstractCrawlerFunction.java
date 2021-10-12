@@ -4,7 +4,10 @@ import org.apache.hadoop.fs.FileSystem;
 
 import it.unical.scalab.parsoda.common.util.CommandOptions;
 
-public abstract class AbstractCrawlerFunction implements CrawlerFunction, Linkable {
+public abstract class AbstractCrawlerFunction
+		implements CrawlerFunction, Linkable {
+
+	public abstract void collect();
 	
 	protected CommandOptions options;
 	protected String inputPath;
@@ -19,8 +22,6 @@ public abstract class AbstractCrawlerFunction implements CrawlerFunction, Linkab
 	public AbstractCrawlerFunction(String options) {
 		this.options = new CommandOptions(options);		
 	}
-	
-	public abstract void collect();
 
 	public CommandOptions getOptions() {
 		return options;
