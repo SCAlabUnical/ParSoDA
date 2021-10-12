@@ -10,7 +10,7 @@ import com.spatial4j.core.shape.Point;
 import it.unical.scalab.parsoda.common.AbstractReduceFunction;
 import it.unical.scalab.parsoda.common.GeotaggedItemBuilder;
 import it.unical.scalab.parsoda.common.TextTuple;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class ReduceByCoordinates extends AbstractReduceFunction {
 
@@ -24,7 +24,7 @@ public class ReduceByCoordinates extends AbstractReduceFunction {
 	public List<String> reduce(TextTuple key, Iterable<Text> items) {
 
 		List<String> ret = new LinkedList<String>();	
-		AbstractGeotaggedItem item = null;
+		SocialItem item = null;
 		Point loc = null;
 		for (Text text : items) {
 			item = GeotaggedItemBuilder.create(text.toString());

@@ -9,11 +9,11 @@ import java.util.function.Predicate;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
 import it.unical.scalab.parsoda.common.Pair;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class OrFiltering extends AbstractFilterFunction {
 	
-	Predicate<AbstractGeotaggedItem> predicate = null;
+	Predicate<SocialItem> predicate = null;
 
 	public OrFiltering() {
 		super();
@@ -49,7 +49,7 @@ public class OrFiltering extends AbstractFilterFunction {
 	}
 	
 	@SuppressWarnings("unchecked")
-	private Predicate<AbstractGeotaggedItem> createFilterFunction(Pair<String,String> p) {
+	private Predicate<SocialItem> createFilterFunction(Pair<String,String> p) {
 		try {
 			
 			Class<AbstractFilterFunction> _tempClass = (Class<AbstractFilterFunction>) Class.forName(p.getLeft().trim());
@@ -61,7 +61,7 @@ public class OrFiltering extends AbstractFilterFunction {
 				Constructor<AbstractFilterFunction> ctor = _tempClass.getConstructor();
 				function = ctor.newInstance();
 			}
-			return (Predicate<AbstractGeotaggedItem>) function;
+			return (Predicate<SocialItem>) function;
 		} catch (IllegalArgumentException | InvocationTargetException | InstantiationException | IllegalAccessException | NoSuchMethodException | SecurityException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -69,7 +69,7 @@ public class OrFiltering extends AbstractFilterFunction {
 	}	
 
 
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		return this.predicate.test(g);
 	}
 	

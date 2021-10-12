@@ -8,7 +8,7 @@ import com.spatial4j.core.shape.Point;
 import com.spatial4j.core.shape.Shape;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 import it.unical.scalab.parsoda.common.util.GeoUtils;
 
 public class IsInShape extends AbstractFilterFunction {
@@ -25,7 +25,7 @@ public class IsInShape extends AbstractFilterFunction {
 	}
 
 	@Override
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		if (g!=null && g.getLocation() != null) {
 			Point p = GeoUtils.getSpatialContext().makePoint(g.getLocation().getX(), g.getLocation().getY());
 			if (GeoUtils.isContained(p, shape)) {

@@ -1,7 +1,7 @@
 package it.unical.scalab.parsoda.filtering;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class ContainsKeywords extends AbstractFilterFunction {
 
@@ -14,7 +14,7 @@ public class ContainsKeywords extends AbstractFilterFunction {
 		super(options);
 	}
 
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		String item = g.toString();
 		String separator = this.options.getOption("separator");
 		for (String s : this.options.getOption("keywords").split(separator)) {

@@ -17,7 +17,7 @@ import org.json.JSONObject;
 
 import it.unical.scalab.parsoda.common.AbstractMapFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 /*
  * Assign a label if the item contains a specific keywords
@@ -39,7 +39,7 @@ public class ClassifyTwoFactionsEvent extends AbstractMapFunction {
 	}
 
 	@Override
-	public AbstractGeotaggedItem apply(AbstractGeotaggedItem g) {
+	public SocialItem apply(SocialItem g) {
 
 		if (keywords == null)
 			try {

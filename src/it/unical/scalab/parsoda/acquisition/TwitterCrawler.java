@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
+import it.unical.scalab.parsoda.common.AbstractCrawlerFunction;
 import org.joda.time.Days;
 import org.joda.time.LocalDateTime;
 

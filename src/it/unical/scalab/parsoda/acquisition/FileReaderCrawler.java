@@ -1,5 +1,7 @@
 package it.unical.scalab.parsoda.acquisition;
 
+import it.unical.scalab.parsoda.common.AbstractCrawlerFunction;
+
 public class FileReaderCrawler extends AbstractCrawlerFunction {
 	
 	public FileReaderCrawler() {

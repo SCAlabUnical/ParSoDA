@@ -18,6 +18,7 @@ import com.flickr4java.flickr.photos.Photo;
 import com.flickr4java.flickr.photos.PhotoList;
 import com.flickr4java.flickr.photos.SearchParameters;
 import com.google.gson.Gson;
+import it.unical.scalab.parsoda.common.AbstractCrawlerFunction;
 
 public class FlickrCrawler extends AbstractCrawlerFunction {
 

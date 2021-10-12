@@ -4,7 +4,7 @@ import org.json.JSONArray;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class HasTags extends AbstractFilterFunction {
 
@@ -16,7 +16,7 @@ public class HasTags extends AbstractFilterFunction {
 		super(options);
 	}
 
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		Object tagsObj = g.search(Metadata.TAGS);
 		if (tagsObj == null)
 			tagsObj = g.search(Metadata.HASHTAGS);

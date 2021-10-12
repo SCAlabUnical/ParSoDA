@@ -16,8 +16,8 @@ public class SequentialPatternMain {
 		app.setDistributedCacheFiles(cFiles);
 		app.setLocatFileSystem();
 		Class[] cFunctions = { FileReaderCrawler.class };
-		String[] cParams = { "-i resources/FlickrRome2017.json" };
-//		String[] cParams = { "-i resources/Colosseum500m.json" };
+//		String[] cParams = { "-i resources/FlickrRome2017.json" };
+		String[] cParams = { "-i resources/Colosseum500m.json" };
 		app.setCrawlers(cFunctions, cParams);
 		Class[] fFunctions = { IsGeotagged.class, IsInPlace.class };
 		String[] fParams = { " ", "-lng 12.492 -lat 41.890 -radius 10000" };

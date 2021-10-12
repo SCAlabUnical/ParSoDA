@@ -4,7 +4,7 @@ import org.apache.tika.language.LanguageIdentifier;
 
 import it.unical.scalab.parsoda.common.AbstractMapFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 @SuppressWarnings("deprecation")
 public class AssignLanguage extends AbstractMapFunction {
@@ -18,7 +18,7 @@ public class AssignLanguage extends AbstractMapFunction {
 	}
 
 	@Override
-	public AbstractGeotaggedItem apply(AbstractGeotaggedItem g) {
+	public SocialItem apply(SocialItem g) {
 		String language = null;
 		String text = null;
 		if(g.getSource().equalsIgnoreCase(Metadata.SOURCE_TWITTER)) {

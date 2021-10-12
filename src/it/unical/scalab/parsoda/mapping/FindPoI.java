@@ -6,7 +6,7 @@ import java.util.List;
 
 import it.unical.scalab.parsoda.common.AbstractMapFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 import it.unical.scalab.parsoda.common.util.GeoUtils;
 import it.unical.scalab.parsoda.common.util.KMLUtils;
 import it.unical.scalab.parsoda.common.util.Roi;
@@ -24,7 +24,7 @@ public class FindPoI extends AbstractMapFunction {
 	}
 
 	@Override
-	public AbstractGeotaggedItem apply(AbstractGeotaggedItem g) {
+	public SocialItem apply(SocialItem g) {
 
 		try {
 			if (g.getLocation() == null)

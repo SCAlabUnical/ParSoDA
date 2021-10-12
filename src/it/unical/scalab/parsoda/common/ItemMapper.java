@@ -3,7 +3,7 @@ package it.unical.scalab.parsoda.common;
 import java.util.Arrays;
 import java.util.List;
 
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class ItemMapper {
 	private List<AbstractMapFunction> functions = null;
@@ -16,7 +16,7 @@ public class ItemMapper {
 		this.functions =  functions;
 	}
 
-	public AbstractGeotaggedItem map(AbstractGeotaggedItem i) {
+	public SocialItem map(SocialItem i) {
 		for (AbstractMapFunction mapFunction : functions) {
 			i = mapFunction.apply(i);
 		}

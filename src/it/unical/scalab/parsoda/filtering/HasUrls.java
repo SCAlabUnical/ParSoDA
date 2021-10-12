@@ -6,7 +6,7 @@ import org.json.JSONTokener;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class HasUrls extends AbstractFilterFunction {
 
@@ -18,7 +18,7 @@ public class HasUrls extends AbstractFilterFunction {
 		super(options);
 	}
 
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		String separator = ",";
 		if (this.options.exists("separator"))
 			this.options.getOption("separator");

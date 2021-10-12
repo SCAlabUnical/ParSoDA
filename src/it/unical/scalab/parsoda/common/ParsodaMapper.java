@@ -14,11 +14,11 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class ParsodaMapper extends Mapper<LongWritable, Text, TextTuple, Text> {
 
-	protected Predicate<AbstractGeotaggedItem> itemFilter = null;
+	protected Predicate<SocialItem> itemFilter = null;
 	protected ItemMapper itemMapper = null;
 	private TextTuple outputKey = new TextTuple();
 	private Text outputValue = new Text();
@@ -27,7 +27,7 @@ public class ParsodaMapper extends Mapper<LongWritable, Text, TextTuple, Text> {
 	@SuppressWarnings("unused")
 	private URI[] distributedFiles = null;
 	private Context context = null;
-	private AbstractGeotaggedItem item = null;
+	private SocialItem item = null;
 	private int numReducerTasks = 1;
 	private MapperWriter writer = new StandardMapperWriter();
 
@@ -126,7 +126,7 @@ public class ParsodaMapper extends Mapper<LongWritable, Text, TextTuple, Text> {
 	}
 
 	@SuppressWarnings("unchecked")
-	private Predicate<AbstractGeotaggedItem> createFilterFunction(Pair<String, String> p) {
+	private Predicate<SocialItem> createFilterFunction(Pair<String, String> p) {
 		try {
 
 			Class<AbstractFilterFunction> _tempClass = (Class<AbstractFilterFunction>) Class
@@ -139,7 +139,7 @@ public class ParsodaMapper extends Mapper<LongWritable, Text, TextTuple, Text> {
 				Constructor<AbstractFilterFunction> ctor = _tempClass.getConstructor();
 				function = ctor.newInstance();
 			}
-			return (Predicate<AbstractGeotaggedItem>) function;
+			return (Predicate<SocialItem>) function;
 		} catch (IllegalArgumentException | InvocationTargetException | InstantiationException | IllegalAccessException
 				| NoSuchMethodException | SecurityException | ClassNotFoundException e) {
 			e.printStackTrace();

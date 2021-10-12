@@ -4,7 +4,7 @@ import org.joda.time.DateTime;
 import org.joda.time.Interval;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class IsInDate extends AbstractFilterFunction {
 	DateTime start;
@@ -23,7 +23,7 @@ public class IsInDate extends AbstractFilterFunction {
 	}
 
 	@Override
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		if (g != null && g.getDateTime() != null && interval.contains(g.getDateTime().toDateTime()))
 			return true;
 		return false;

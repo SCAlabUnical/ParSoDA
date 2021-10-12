@@ -4,11 +4,11 @@ import java.util.function.Function;
 
 import org.apache.hadoop.mapreduce.Mapper.Context;
 
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 import it.unical.scalab.parsoda.common.util.CommandOptions;
 
 
-public abstract class AbstractMapFunction implements Function<AbstractGeotaggedItem,AbstractGeotaggedItem> {
+public abstract class AbstractMapFunction implements Function<SocialItem, SocialItem> {
 
 	protected CommandOptions options;
 	
@@ -20,7 +20,7 @@ public abstract class AbstractMapFunction implements Function<AbstractGeotaggedI
 		this.options = new CommandOptions(options);		
 	}
 	
-	public abstract AbstractGeotaggedItem apply(AbstractGeotaggedItem t);
+	public abstract SocialItem apply(SocialItem t);
 	
 	@SuppressWarnings("rawtypes")
 	public Context context;

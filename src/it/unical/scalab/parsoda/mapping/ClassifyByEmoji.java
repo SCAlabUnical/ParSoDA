@@ -20,7 +20,7 @@ import com.vdurmont.emoji.EmojiParser;
 
 import it.unical.scalab.parsoda.common.AbstractMapFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class ClassifyByEmoji extends AbstractMapFunction {
 
@@ -35,7 +35,7 @@ public class ClassifyByEmoji extends AbstractMapFunction {
 	}
 
 	@Override
-	public AbstractGeotaggedItem apply(AbstractGeotaggedItem g) {
+	public SocialItem apply(SocialItem g) {
 		if (this.emoji == null)
 			try {
 				loadEmoji();

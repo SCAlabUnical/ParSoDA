@@ -10,24 +10,24 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
-import it.unical.scalab.parsoda.common.model.Flickr;
-import it.unical.scalab.parsoda.common.model.GenericGeotaggedItem;
-import it.unical.scalab.parsoda.common.model.Tweet;
+import it.unical.scalab.parsoda.common.model.SocialItem;
+import it.unical.scalab.parsoda.common.model.FlickrSocialItem;
+import it.unical.scalab.parsoda.common.model.GenericSocialItem;
+import it.unical.scalab.parsoda.common.model.TwitterSocialItem;
 
 public class GeotaggedItemBuilder {
 
-	public static AbstractGeotaggedItem create(String s) {
+	public static SocialItem create(String s) {
 		try {
-			return new GenericGeotaggedItem(s);
+			return new GenericSocialItem(s);
 		} catch (Exception e) {
 		}
 		try {
-			return new Flickr(s);
+			return new FlickrSocialItem(s);
 		} catch (Exception e) {
 		}
 		try {
-			return new Tweet(s);
+			return new TwitterSocialItem(s);
 		} catch (Exception e) {
 		}
 
@@ -35,20 +35,20 @@ public class GeotaggedItemBuilder {
 
 	}
 
-	public static AbstractGeotaggedItem create(JSONObject s) {
+	public static SocialItem create(JSONObject s) {
 		
 		try {
-			return new GenericGeotaggedItem(s);
+			return new GenericSocialItem(s);
 		} catch (JSONException e) {
 		}
 		
 		try {
-			return new Flickr(s);
+			return new FlickrSocialItem(s);
 		} catch (JSONException e) {
 		}
 
 		try {
-			return new Tweet(s);
+			return new TwitterSocialItem(s);
 		} catch (JSONException e) {
 		}
 

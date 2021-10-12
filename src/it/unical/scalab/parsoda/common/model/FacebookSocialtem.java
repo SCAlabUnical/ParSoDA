@@ -12,18 +12,18 @@ import com.spatial4j.core.shape.Point;
 import it.unical.scalab.parsoda.common.Metadata;
 import it.unical.scalab.parsoda.common.User;
 
-public class Facebook extends AbstractGeotaggedItem {
+public class FacebookSocialtem extends SocialItem {
 
 	@SuppressWarnings("unused")
 	private final static String SOURCE = "Facebook";
 	private final static DateTimeFormatter dateStringFormat = DateTimeFormat.forPattern("MMM dd, yyyy h:mm:ss a")
 			.withLocale(Locale.US);
 	
-	public Facebook(String s) {
+	public FacebookSocialtem(String s) {
 		super(new JSONObject(s)); 
 	}
 	
-	public Facebook(JSONObject jsonObject) {
+	public FacebookSocialtem(JSONObject jsonObject) {
 		super(jsonObject);
 	}
 

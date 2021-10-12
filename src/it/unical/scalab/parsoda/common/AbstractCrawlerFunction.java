@@ -1,8 +1,7 @@
-package it.unical.scalab.parsoda.acquisition;
+package it.unical.scalab.parsoda.common;
 
 import org.apache.hadoop.fs.FileSystem;
 
-import it.unical.scalab.parsoda.common.Linkable;
 import it.unical.scalab.parsoda.common.util.CommandOptions;
 
 public abstract class AbstractCrawlerFunction implements CrawlerFunction, Linkable {

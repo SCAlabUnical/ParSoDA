@@ -8,7 +8,7 @@ import com.spatial4j.core.shape.Point;
 
 import it.unical.scalab.parsoda.common.AbstractMapFunction;
 import it.unical.scalab.parsoda.common.Metadata;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class ClassifyByGeoCell extends AbstractMapFunction {
 
@@ -36,7 +36,7 @@ public class ClassifyByGeoCell extends AbstractMapFunction {
 	}
 
 	@Override
-	public AbstractGeotaggedItem apply(AbstractGeotaggedItem g) {
+	public SocialItem apply(SocialItem g) {
 		if (g.getLocation() != null) {
 			Point l = g.getLocation();
 			double xCell = calculateLongitude(l.getX());

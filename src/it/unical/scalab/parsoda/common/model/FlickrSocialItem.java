@@ -14,18 +14,18 @@ import com.spatial4j.core.shape.impl.PointImpl;
 import it.unical.scalab.parsoda.common.Metadata;
 import it.unical.scalab.parsoda.common.User;
 
-public class Flickr extends AbstractGeotaggedItem {
+public class FlickrSocialItem extends SocialItem {
 
 	@SuppressWarnings("unused")
 	private final static String SOURCE = "Flickr";
 	private final static DateTimeFormatter dateStringFormat = DateTimeFormat.forPattern("MMM dd, yyyy h:mm:ss a")
 			.withLocale(Locale.US);
 	
-	public Flickr(String s) {
+	public FlickrSocialItem(String s) {
 		super(new JSONObject(s)); 
 	}
 	
-	public Flickr(JSONObject jsonObject) {
+	public FlickrSocialItem(JSONObject jsonObject) {
 		super(jsonObject);
 	}
 

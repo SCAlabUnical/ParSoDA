@@ -1,7 +1,7 @@
 package it.unical.scalab.parsoda.filtering;
 
 import it.unical.scalab.parsoda.common.AbstractFilterFunction;
-import it.unical.scalab.parsoda.common.model.AbstractGeotaggedItem;
+import it.unical.scalab.parsoda.common.model.SocialItem;
 
 public class IsOfUser extends AbstractFilterFunction {
 	public IsOfUser() {
@@ -13,7 +13,7 @@ public class IsOfUser extends AbstractFilterFunction {
 	}
 
 	@Override
-	public boolean test(AbstractGeotaggedItem g) {
+	public boolean test(SocialItem g) {
 		return this.options.getString("userid").equals(g.getUserId());
 	}
 

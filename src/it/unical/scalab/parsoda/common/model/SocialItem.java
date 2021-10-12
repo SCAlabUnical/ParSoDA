@@ -10,7 +10,7 @@ import com.spatial4j.core.shape.impl.PointImpl;
 import it.unical.scalab.parsoda.common.Metadata;
 import it.unical.scalab.parsoda.common.User;
 
-public abstract class AbstractGeotaggedItem extends JSONObject {
+public abstract class SocialItem extends JSONObject {
 
 	public abstract User extractUserInfo(JSONObject obj);
 
@@ -22,11 +22,11 @@ public abstract class AbstractGeotaggedItem extends JSONObject {
 
 	public abstract LocalDateTime extractDateTimeInfo(JSONObject obj);
 
-	public AbstractGeotaggedItem(String json) {
+	public SocialItem(String json) {
 		this(new JSONObject(json));
 	}
 
-	public AbstractGeotaggedItem(JSONObject jsonObject) {
+	public SocialItem(JSONObject jsonObject) {
 		
 		if(!check(jsonObject)) throw new IllegalArgumentException();
 
@@ -153,7 +153,7 @@ public abstract class AbstractGeotaggedItem extends JSONObject {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AbstractGeotaggedItem other = (AbstractGeotaggedItem) obj;
+		SocialItem other = (SocialItem) obj;
 		if (getId() == null) {
 			if (other.getId() != null)
 				return false;

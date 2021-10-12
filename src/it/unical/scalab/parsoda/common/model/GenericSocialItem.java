@@ -10,18 +10,18 @@ import com.spatial4j.core.shape.impl.PointImpl;
 import it.unical.scalab.parsoda.common.Metadata;
 import it.unical.scalab.parsoda.common.User;
 
-public class GenericGeotaggedItem extends AbstractGeotaggedItem {
+public class GenericSocialItem extends SocialItem {
 
 	@SuppressWarnings("unused")
 	private final static String SOURCE = "Generic";
 
-	public GenericGeotaggedItem(String s) {
+	public GenericSocialItem(String s) {
 		super(new JSONObject(s));
 		this.put(Metadata.EXTRA_PAYLOAD,
 				this.getJSONObject(Metadata.EXTRA_PAYLOAD).getJSONObject(Metadata.EXTRA_PAYLOAD));
 	}
 
-	public GenericGeotaggedItem(JSONObject jsonObject) {
+	public GenericSocialItem(JSONObject jsonObject) {
 		super(jsonObject);
 		this.put(Metadata.EXTRA_PAYLOAD,
 				this.getJSONObject(Metadata.EXTRA_PAYLOAD).getJSONObject(Metadata.EXTRA_PAYLOAD));

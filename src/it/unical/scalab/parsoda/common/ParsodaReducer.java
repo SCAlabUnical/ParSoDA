@@ -26,7 +26,7 @@ public class ParsodaReducer extends Reducer<TextTuple, Text, NullWritable, Text>
 			try {
 
 				Class<ReduceFunction> _tempClass = (Class<ReduceFunction>) Class.forName(reduceFunction);
-				if (reduceParams.length() > 0) {
+				if (reduceParams!= null && reduceParams.length() > 0) {
 					Constructor<ReduceFunction> ctor = _tempClass.getConstructor(String.class);
 					reducer = (ReduceFunction) ctor.newInstance(reduceParams);
 				} else {

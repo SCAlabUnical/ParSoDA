@@ -14,17 +14,17 @@ public class RoIMiningMain {
 	public static void main(String[] args) {
 		String colosseumSynonyms = "colosse:colis:collis:collos:Amphiteatrum Flavium:Amphitheatrum Flavium:An Colasaem:Coliseo:Coliseo:Coliseo de Roma:Coliseo de Roma:Coliseu de Roma:Coliseum:Coliseum:Coliseum:Coliseus:Colloseum:Coloseu:Colosseo:Colosseo:Colosseo:Colosseu:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Colosseum:Culusseu:Kolezyum:Koliseoa:Kolize:Kolizejs:Kolizey:Kolizey:Koliziejus:Kolosej:Kolosej:Koloseo:Koloseo:Koloseum:Koloseum:Koloseum:Koloseum:Koloseum:Koloseum:Koloseum:Koloseumi:Kolosseum:Kolosseum:Kolosseum:Kolosseum";
 		SocialDataApp app = new SocialDataApp("RoI Mining - Colosseum");
-		app.setOutputBasePath("outputApp");
+		app.setOutputBasePath("outputApp/ROI");
 		app.setLocatFileSystem();
 		app.setNumReducer(1);
 		Class[] cFunctions = { FileReaderCrawler.class };
-		String[] cParams = { "-i resources/FlickrRome2017.json" };
+		String[] cParams = { "-i resources/Colosseum500m.json" };
 		app.setCrawlers(cFunctions, cParams);
 		Class[] fFunctions = { IsGeotagged.class, ContainsKeywords.class };
 		String[] fParams = { " ", "-separator : -keywords " + colosseumSynonyms };
 		app.setFilters(fFunctions, fParams);
 		Class rFunction = ReduceByCoordinates.class;
-		String rParams = "-t 5";
+		String rParams = null;
 		app.setReduceFunction(rFunction, rParams);
 		Class aFunction = ExtractRoIs.class;
 		String aParams = "-minPts 150 -eps 30";
