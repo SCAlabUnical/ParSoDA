@@ -9,7 +9,6 @@ public class IsGeotagged extends AbstractFilterFunction {
 		super();
 	}
 
-	
 	public boolean test(SocialItem g) {
 		if (g == null || g.getLocation() == null || (g.getLocation().getX() == 0 && g.getLocation().getY() == 0))
 			return false;

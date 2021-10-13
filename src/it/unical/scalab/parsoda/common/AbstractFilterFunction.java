@@ -21,5 +21,4 @@ public abstract class AbstractFilterFunction implements Predicate<SocialItem> {
 		this.options = new CommandOptions(options);	
 	}
 
-
 }
