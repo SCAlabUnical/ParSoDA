@@ -2,6 +2,7 @@ package it.unical.scalab.parsoda.common;
 
 public class Metadata {
 	public final static String USERID = "USERID";
+	public final static String USER_USERID = "USER.USERID";
 	public final static String USERNAME = "USERNAME";
 	public final static String TIMESTAMP = "TIMESTAMP";
 	public final static String LONGITUDE = "LNG";

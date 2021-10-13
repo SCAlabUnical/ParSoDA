@@ -1,6 +1,7 @@
 package it.unical.scalab.parsoda.app;
 import it.unical.scalab.parsoda.acquisition.FileReaderCrawler;
 import it.unical.scalab.parsoda.analysis.PrefixSpan;
+import it.unical.scalab.parsoda.common.Metadata;
 import it.unical.scalab.parsoda.common.SocialDataApp;
 import it.unical.scalab.parsoda.filtering.IsGeotagged;
 import it.unical.scalab.parsoda.filtering.IsInPlace;
@@ -18,7 +19,8 @@ public class SequentialPatternMain {
 		app.setDistributedCacheFiles(cFiles); // DISTRIBUTE AN ARRAY OF FILES TO ALL MAP/REDUCE NODES
 		app.setLocatFileSystem(); // USE THE LOCAL FILESYSTEM (FOR TESTING PURPOSE)
 		Class[] cFunctions = { FileReaderCrawler.class };
-		String[] cParams = { "-i resources/Colosseum500m.json" };
+//		String[] cParams = { "-i resources/Colosseum500m.json" };
+		String[] cParams = { "-i resources/FlickrRome2017.json" };
 		app.setCrawlers(cFunctions, cParams);
 
 		// DATA FILTERING
@@ -32,8 +34,8 @@ public class SequentialPatternMain {
 		app.setMapFunctions(mFunctions, mParams);
 
 		// DATA PARTITIONING
-		String groupKey = "USER.USERID";
-		String sortKey = "DATETIME";
+		String groupKey = Metadata.USER_USERID;
+		String sortKey = Metadata.DATETIME;
 		app.setPartitioningKeys(groupKey, sortKey);
 
 		// DATA REDUCTION
@@ -50,6 +52,8 @@ public class SequentialPatternMain {
 		Class vFunction = SortPrefixSpanBy.class;
 		String vParams = "-k support -d DESC";
 		app.setVisualizationFunction(vFunction, vParams);
+
+		// Launch the app
 		app.execute();
 	}
 }
