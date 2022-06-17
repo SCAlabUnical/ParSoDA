@@ -66,7 +66,7 @@
 		</plugins>
 	</build>
 	<properties>
-		<hadoop.version>2.7.4</hadoop.version>
+		<hadoop.version>2.10.2</hadoop.version>
 	</properties>
 	<dependencies>
 
