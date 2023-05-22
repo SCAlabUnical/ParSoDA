@@ -8,7 +8,7 @@ ParSoDA (Parallel Social Data Analytics) is a Java programming library for simpl
 - n. 5 Data analysis functions, parsoda.analysis.ExtractRoIs, parsoda.analysis.FPGrowth, parsoda.analysis.NFactionsPolarization, parsoda.analysis.PrefixSpan, parsoda.analysis.TwoFactionsPolarization
 - n. 3 Data visualization functions, parsoda.visualization.RoIsToKML, parsoda.visualization.SortPrefixSpanBy, parsoda.visualization.SortByHashtagSupport
 
-<img src="ParSoDA-logo.png" width="128"/>
+<img src="ParSoDA-logo.png" width="463"/>
 
 ## How to cite
 L. Belcastro, F. Marozzo, D. Talia, P. Trunfio, "ParSoDA: High-Level Parallel Programming for Social Data Mining". Social Network Analysis and Mining, vol. 9, n. 1, 2019
